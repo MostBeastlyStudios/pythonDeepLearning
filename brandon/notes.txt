@@ -1,0 +1,5 @@
+Best fit line:
+  > Y = mx+b
+    > m = (mean(x)*mean(y)-mean(xy))/(mean(x)^2 - mean(x^2))
+    > b = mean(y)-m*mean(x)
+  > Only works on 2D data
