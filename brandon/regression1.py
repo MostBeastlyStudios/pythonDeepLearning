@@ -29,7 +29,7 @@ df['label'] = df[forecast_col].shift(-forecast_out) #make 'label' column euqal t
 X = np.array(df.drop(['label'],1)) #create features variable with everything except the label column
 X = preprocessing.scale(X) #scale the feature data (not really sure what this is)
 X_lately = X[-forecast_out:] #X = X until the point of -forecast_out
-X = X[:-forecast_out:]
+X = X[:-forecast_out]
 
 df.dropna(inplace=True) #drop NaN and nil values
 y = np.array(df['label']) #create labels using the label column
