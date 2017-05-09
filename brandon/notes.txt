@@ -28,4 +28,6 @@ Support Vector Machine:
   > Best for reading handwritten data
   > Separates data into two groups using a "best separating hyperplane" or "decision line"
   > Can only separate data into two groups at a time for classification
-  > 
+  > Need to know vector math
+    > Dot product
+  > Needs to be trained
