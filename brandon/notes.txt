@@ -23,3 +23,9 @@ K Nearest Neighbors:
 
     Euclidean Distance:
       > sqrt(nEi=1 (ai=Pi)^2)
+
+Support Vector Machine:
+  > Best for reading handwritten data
+  > Separates data into two groups using a "best separating hyperplane" or "decision line"
+  > Can only separate data into two groups at a time for classification
+  > 
