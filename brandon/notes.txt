@@ -1,8 +1,4 @@
-Best fit line:
-  > Y = mx+b
-    > m = (mean(x)*mean(y)-mean(xy))/(mean(x)^2 - mean(x^2))
-    > b = mean(y)-m*mean(x)
-  > Only works on 2D data
+
 
 Saving a Neural Network:
   > In python, you can save specific objects as "Pickles"
@@ -13,8 +9,17 @@ Linear Regression:
   > Useful for 2D data
     > XY graph
 
+    Best fit line:
+      > Y = mx+b
+        > m = (mean(x)*mean(y)-mean(xy))/(mean(x)^2 - mean(x^2))
+        > b = mean(y)-m*mean(x)
+      > Only works on 2D data
+
 K Nearest Neighbors:
   > Sorting unknown data based on who is the closest in proximity on a graph
   > Looks at all points which can be classified and any unclassifiable data points are classified by the K nearest neighbors.
   > Not great on large data sets because it relies on Euclidean distance calculation
   > No training involved
+
+    Euclidean Distance:
+      > sqrt(nEi=1 (ai=Pi)^2)
