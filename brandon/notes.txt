@@ -41,7 +41,9 @@ Clustering + Unsupervised Machine Learning:
       > K-Means
   > Hierarchical Clustering
       > Machine groups into a number of clusters
-  > Typically used as a precurser to a SVM or NN
+      > Determines how many groups there should be
+      > Mean Shift
+  > Typically used as a precursor to a SVM or NN
 
 K-Means Clustering
   > You choose the value of K. The number of clusters
@@ -51,3 +53,11 @@ K-Means Clustering
   > Repeat this until the centroids are no longer moving
       > Max steps for training and accuracy tolerance
   > Takes a long time to train, but then it's really fast
+
+Mean Shift Clustering
+  > Each feature is it's own cluster centroid
+  > Each feature has a radius around it
+  > All of the features within that radius calculate a centroid for a new circle
+  > Repeat this with the new centroid with same sized radius
+  > All of the new points converge into a single point
+  > Each cluster center separates and becomes optimized clusters
