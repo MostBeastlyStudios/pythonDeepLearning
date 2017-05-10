@@ -61,3 +61,37 @@ Mean Shift Clustering
   > Repeat this with the new centroid with same sized radius
   > All of the new points converge into a single point
   > Each cluster center separates and becomes optimized clusters
+
+Neural Networks:
+  > Invented in 1940 but 100% theoretical
+  > Not usable until 2011 when computing power caught up
+  > Inputs are sent to a neuron to be summed. The connections are weighted. The neuron fires a value dependent on the bias from the activation scaler.
+  > Deep Neural Network:
+      > Has more than one hidden layer
+  > Needs a much larger training set
+      > Up to 5 million features
+  > Take much longer to train because there is a much larger number of variables to optimize
+
+  > Training
+      > '''
+      input > weight > hidden layer 1 (activation function) > weights > hidden layer 2
+      (activation function) > weights > output layer
+
+      ^^^ Feed forward NN because it goes straight through
+
+      Compare output to intended output > cost function (cross entropy)
+      Optimization function (optimizer) > minimize cost (AdamOptimizer, SGD, AdaGrad, etc.)
+
+      ^^^ Back propogation because it resets variables based on intended results
+
+      feed forward + backprop = epoch
+
+      Training is in epoch iterations
+      '''
+
+TensorFlow:
+  > Everything is handled as "Tensors" or arrays
+  > All processing is done through sessions
+  > Two main steps
+      > Build computation graph (modeling)
+      > Build session
