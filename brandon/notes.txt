@@ -31,3 +31,24 @@ Support Vector Machine:
   > Need to know vector math
     > Dot product
   > Needs to be trained
+  > If your data is not linearly separable, you need to add dimensions until it is
+    > Incredibly expensive, so you can use Kernels to make it less expensive
+  > Because it's a binary classifier, you can use OVR (One Vs. Rest) or OVO (One vs One)
+
+Clustering + Unsupervised Machine Learning:
+  > Class clustering
+      > You tell the machine how many clusters
+      > K-Means
+  > Hierarchical Clustering
+      > Machine groups into a number of clusters
+      >
+
+K-Means Clustering
+  > You choose the value of K. The number of clusters
+  > Plots data and chooses three random centroids
+  > Groups data depending on proximity to centroids
+  > Find the center of those clusters/groups and make that the new centroid
+  > Repeat this until the centroids are no longer moving
+      > Max steps for training and accuracy tolerance
+  > Takes a long time to train, but then it's really fast
+  
